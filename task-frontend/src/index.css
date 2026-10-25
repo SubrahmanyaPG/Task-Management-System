@@ -1,0 +1,198 @@
+:root {
+  /* Sleek Enterprise Minimal Palette - Zinc/Slate base */
+  --bg-app: #fafafa;
+  --bg-card: #ffffff;
+  --bg-header: rgba(250, 250, 250, 0.8);
+  --border-color: #e4e4e7; /* zinc-200 */
+  --border-hover: #d4d4d8; /* zinc-300 */
+  --border-focus: #2563eb; /* Cobalt Blue */
+  
+  /* Primary Accent: Cobalt Blue */
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --primary-light: rgba(37, 99, 235, 0.08);
+  --primary-border: rgba(37, 99, 235, 0.2);
+  --primary-gradient: linear-gradient(to bottom, #3b82f6, #2563eb);
+  
+  /* Secondary/Success: Emerald Green */
+  --success: #059669;
+  --success-hover: #047857;
+  --success-light: rgba(5, 150, 105, 0.08);
+  --success-border: rgba(5, 150, 105, 0.2);
+  
+  /* Warning: Amber */
+  --warning: #d97706;
+  --warning-light: rgba(217, 119, 6, 0.08);
+  --warning-border: rgba(217, 119, 6, 0.2);
+  
+  /* Danger/Alert: Crimson Red */
+  --danger: #dc2626;
+  --danger-hover: #b91c1c;
+  --danger-light: rgba(220, 38, 38, 0.08);
+  --danger-border: rgba(220, 38, 38, 0.2);
+  
+  /* Neutral Palette */
+  --text-primary: #09090b; /* zinc-950 */
+  --text-secondary: #52525b; /* zinc-600 */
+  --text-muted: #a1a1aa; /* zinc-400 */
+  
+  /* Priority Badges - Crisp, clean, minimal solid contrast border style */
+  --badge-high-bg: rgba(220, 38, 38, 0.06);
+  --badge-high-text: #dc2626;
+  --badge-high-border: #fca5a5;
+  
+  --badge-medium-bg: rgba(217, 119, 6, 0.06);
+  --badge-medium-text: #d97706;
+  --badge-medium-border: #fcd34d;
+  
+  --badge-low-bg: rgba(71, 85, 105, 0.06);
+  --badge-low-text: #475569;
+  --badge-low-border: #cbd5e1;
+
+  /* Shadows (Minimal, clean drop-shadows inspired by Tailwind/Vercel) */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.04), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+  --shadow-overlay: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  
+  /* Border Radius (Slightly sharper, clean look) */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+
+  /* Font settings (Crisp system font stack) */
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--text-secondary);
+  background-color: var(--bg-app);
+  
+  --transition-all: all 0.15s ease-out;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+/* Dark Mode Variables - Pure Zinc Dark Theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-app: #09090b; /* zinc-950 */
+    --bg-card: #18181b; /* zinc-900 */
+    --bg-header: rgba(9, 9, 11, 0.8);
+    --border-color: #27272a; /* zinc-800 */
+    --border-hover: #3f3f46; /* zinc-700 */
+    
+    --text-primary: #fafafa; /* zinc-50 */
+    --text-secondary: #a1a1aa; /* zinc-400 */
+    --text-muted: #71717a; /* zinc-500 */
+    
+    --primary: #3b82f6; /* light blue */
+    --primary-hover: #60a5fa;
+    --primary-light: rgba(59, 130, 246, 0.15);
+    --primary-border: rgba(59, 130, 246, 0.3);
+    --primary-gradient: linear-gradient(to bottom, #3b82f6, #1d4ed8);
+    
+    --success: #10b981;
+    --success-hover: #34d399;
+    --success-light: rgba(16, 185, 129, 0.15);
+    --success-border: rgba(16, 185, 129, 0.3);
+    
+    --warning: #f59e0b;
+    --warning-light: rgba(245, 158, 11, 0.15);
+    --warning-border: rgba(245, 158, 11, 0.3);
+    
+    --danger: #ef4444;
+    --danger-hover: #f87171;
+    --danger-light: rgba(239, 68, 68, 0.15);
+    --danger-border: rgba(239, 68, 68, 0.3);
+
+    /* Priority Badges - Clean dark styling */
+    --badge-high-bg: rgba(239, 68, 68, 0.1);
+    --badge-high-text: #ef4444;
+    --badge-high-border: rgba(239, 68, 68, 0.2);
+    
+    --badge-medium-bg: rgba(245, 158, 11, 0.1);
+    --badge-medium-text: #f59e0b;
+    --badge-medium-border: rgba(245, 158, 11, 0.2);
+    
+    --badge-low-bg: rgba(148, 163, 184, 0.1);
+    --badge-low-text: #94a6b8;
+    --badge-low-border: rgba(148, 163, 184, 0.2);
+    
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* Reset / Core Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--bg-app);
+  color: var(--text-secondary);
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+button, input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  outline: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* Main Container Layout */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 800px; /* Margins are slightly tighter for that focused desktop feel */
+  margin: 0 auto;
+  padding: 100px 24px 64px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 640px) {
+  .app-container {
+    padding: 88px 16px 40px;
+  }
+}
